@@ -1,0 +1,608 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Dr. Preetha K.G. | Academic & Research Profile</title>
+
+<meta name="description" content="Academic and research profile of Dr. Preetha K.G., Professor of Computer Science and Engineering, Rajagiri School of Engineering and Technology.">
+
+<style>
+:root {
+    --primary: #12345a;
+    --secondary: #176b87;
+    --accent: #e9f3f8;
+    --text: #263445;
+    --light: #f6f9fc;
+    --white: #ffffff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    color: var(--text);
+    line-height: 1.7;
+    background: var(--light);
+}
+
+a {
+    text-decoration: none;
+    color: var(--secondary);
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 15px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 21px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul a {
+    color: white;
+    font-size: 14px;
+}
+
+nav ul a:hover {
+    color: #8ed8ed;
+}
+
+.hero {
+    background: linear-gradient(120deg, #12345a, #176b87);
+    color: white;
+    padding: 85px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.hero-content {
+    max-width: 720px;
+}
+
+.hero h1 {
+    font-size: clamp(32px, 5vw, 48px);
+    margin-bottom: 12px;
+}
+
+.hero h2 {
+    font-size: 21px;
+    font-weight: 400;
+    margin-bottom: 18px;
+}
+
+.hero p {
+    font-size: 16px;
+    color: #e2edf5;
+}
+
+.profile-img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+    background: #e9f3f8;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 11px 24px;
+    background: white;
+    color: var(--primary);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: #d8eff8;
+}
+
+section {
+    padding: 65px 8%;
+    scroll-margin-top: 75px;
+}
+
+section:nth-child(even) {
+    background: white;
+}
+
+.section-title {
+    color: var(--primary);
+    font-size: 29px;
+    margin-bottom: 25px;
+    border-left: 5px solid var(--secondary);
+    padding-left: 14px;
+}
+
+.about-text {
+    max-width: 1000px;
+    font-size: 16px;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.card {
+    background: white;
+    padding: 24px;
+    border-radius: 10px;
+    box-shadow: 0 3px 14px rgba(0,0,0,0.07);
+    border-top: 3px solid var(--secondary);
+}
+
+.card h3 {
+    color: var(--primary);
+    margin-bottom: 10px;
+    font-size: 19px;
+}
+
+.card p, .card li {
+    font-size: 14px;
+}
+
+.card ul {
+    padding-left: 19px;
+}
+
+.tag {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--primary);
+    padding: 7px 13px;
+    border-radius: 20px;
+    margin: 5px 4px;
+    font-size: 14px;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 23px;
+    background: white;
+    border-radius: 8px;
+    border-left: 4px solid var(--secondary);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.project h3 {
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.project p {
+    font-size: 15px;
+}
+
+.timeline {
+    border-left: 3px solid var(--secondary);
+    padding-left: 25px;
+    margin-left: 10px;
+}
+
+.timeline-item {
+    margin-bottom: 25px;
+}
+
+.timeline-item h3 {
+    color: var(--primary);
+}
+
+.contact {
+    background: var(--primary);
+    color: white;
+}
+
+.contact .section-title {
+    color: white;
+}
+
+.contact a {
+    color: #9ee5f5;
+}
+
+footer {
+    text-align: center;
+    padding: 22px;
+    background: #0c243f;
+    color: white;
+    font-size: 13px;
+}
+
+@media(max-width: 700px) {
+    header {
+        padding: 14px 5%;
+    }
+
+    nav {
+        gap: 12px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    .hero {
+        padding: 55px 7%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .profile-img {
+        order: -1;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAVIGATION -->
+<header>
+<nav>
+    <div class="logo">Dr. Preetha K.G.</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+</header>
+
+<!-- HERO SECTION -->
+<div class="hero">
+    <div class="hero-content">
+        <h1>Dr. Preetha K.G.</h1>
+        <h2>Professor | Computer Science & Engineering</h2>
+        <p>
+            Rajagiri School of Engineering & Technology (RSET),
+            Kochi, Kerala, India.
+        </p>
+        <p style="margin-top:15px;">
+            Researcher in Artificial Intelligence, Machine Learning,
+            Ocean Informatics, Cybersecurity and Intelligent Systems.
+        </p>
+        <a href="#about" class="btn">Explore My Profile</a>
+    </div>
+
+    <!-- Replace profile.jpg with your photograph -->
+    <img src="profile.jpg"
+         alt="Dr. Preetha K.G."
+         class="profile-img">
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="section-title">About Me</h2>
+
+<div class="about-text">
+<p>
+I am Dr. Preetha K.G., Professor in the Department of Computer
+Science and Engineering at Rajagiri School of Engineering &
+Technology, Kerala, India. I have been associated with RSET since
+2004 and have over two decades of experience in teaching,
+research, academic administration and institutional development.
+</p>
+
+<p style="margin-top:15px;">
+I received my Ph.D. in Mobile Ad hoc Networks from Cochin
+University of Science and Technology (CUSAT) in 2018.
+My research interests span Artificial Intelligence, Machine
+Learning, Deep Learning, Computer Networks, Cybersecurity
+and intelligent ocean data analytics.
+</p>
+
+<p style="margin-top:15px;">
+My research focuses on developing practical AI-driven solutions
+for real-world challenges, particularly in ocean science,
+environmental monitoring, flood susceptibility assessment and
+cybersecurity. I am also involved in funded research projects,
+interdisciplinary collaborations and research mentoring.
+</p>
+</div>
+
+<div class="info-grid">
+    <div class="card">
+        <h3>Academic Position</h3>
+        <p>Professor, Computer Science & Engineering</p>
+    </div>
+    <div class="card">
+        <h3>Institution</h3>
+        <p>Rajagiri School of Engineering & Technology</p>
+    </div>
+    <div class="card">
+        <h3>Doctoral Degree</h3>
+        <p>Ph.D. in Mobile Ad hoc Networks, CUSAT, 2018</p>
+    </div>
+    <div class="card">
+        <h3>Research Contributions</h3>
+        <p>35+ research publications and 2 Indian patents</p>
+    </div>
+</div>
+</section>
+
+<!-- RESEARCH INTERESTS -->
+<section id="research">
+<h2 class="section-title">Research Interests</h2>
+
+<p>
+My research interests focus on the application of intelligent
+computing techniques to complex real-world problems.
+</p>
+
+<div style="margin-top:20px;">
+    <span class="tag">Artificial Intelligence</span>
+    <span class="tag">Machine Learning</span>
+    <span class="tag">Deep Learning</span>
+    <span class="tag">Explainable AI</span>
+    <span class="tag">Ocean Informatics</span>
+    <span class="tag">Cybersecurity</span>
+    <span class="tag">Computer Networks</span>
+    <span class="tag">Environmental AI</span>
+    <span class="tag">IoT and Intelligent Systems</span>
+    <span class="tag">Geospatial Analytics</span>
+</div>
+
+<div class="info-grid">
+    <div class="card">
+        <h3>AI & Machine Learning</h3>
+        <p>Intelligent prediction, classification, anomaly detection,
+        explainable AI and data-driven decision support.</p>
+    </div>
+
+    <div class="card">
+        <h3>Ocean Informatics</h3>
+        <p>AI-based ocean eddy detection, tracking, analysis and
+        marine data visualization.</p>
+    </div>
+
+    <div class="card">
+        <h3>Cybersecurity</h3>
+        <p>Behavioural anomaly detection, network security,
+        firewall analytics and intelligent threat assessment.</p>
+    </div>
+
+    <div class="card">
+        <h3>Environmental AI</h3>
+        <p>Deep learning and machine learning for flood
+        susceptibility mapping and environmental intelligence.</p>
+    </div>
+</div>
+</section>
+
+<!-- RESEARCH PROJECTS -->
+<section id="projects">
+<h2 class="section-title">Research Projects</h2>
+
+<div class="project">
+    <h3>OceanVizio – Intelligent Ocean Data Analytics</h3>
+    <p>
+    Principal Investigator. An AI-enabled ocean data visualization
+    and analytics platform for the detection, analysis and
+    visualization of ocean eddies using two-dimensional and
+    three-dimensional representations. The project has received
+    support from NRB, DRDO and the Indian Navy, with deployments
+    at NPOL and Navy establishments.
+    </p>
+</div>
+
+<div class="project">
+    <h3>Dynamic Flood Susceptibility Mapping for Indian States
+    using Deep Learning Techniques</h3>
+    <p>
+    A CSIR-ASPIRE funded research project focused on developing
+    intelligent flood susceptibility mapping approaches using
+    machine learning, deep learning, rainfall, terrain,
+    hydrological and environmental parameters.
+    </p>
+</div>
+
+<div class="project">
+    <h3>AI-Driven Framework for Marine Traffic Prediction and
+    Decision Support</h3>
+    <p>
+    A research initiative exploring the application of AI and
+    machine learning to AIS-based marine traffic prediction
+    and intelligent decision support.
+    </p>
+    <p><i>Proposed research initiative.</i></p>
+</div>
+
+<div class="project">
+    <h3>Explainable AI for Enterprise Firewall Log Analytics</h3>
+    <p>
+    Development of an explainable AI-driven behavioural anomaly
+    detection framework for enterprise firewall logs, incorporating
+    device-level profiling, anomaly scoring and SHAP-based
+    explanations.
+    </p>
+</div>
+</section>
+
+<!-- PUBLICATIONS -->
+<section id="publications">
+<h2 class="section-title">Publications</h2>
+
+<p>
+My research publications cover computer networks, artificial
+intelligence, machine learning, ocean analytics and intelligent
+computing systems.
+</p>
+
+<div class="info-grid">
+    <div class="card">
+        <h3>Journal Publications</h3>
+        <p>Peer-reviewed research contributions in relevant
+        areas of computer science and interdisciplinary research.</p>
+    </div>
+
+    <div class="card">
+        <h3>Conference Publications</h3>
+        <p>Research contributions presented at national and
+        international conferences.</p>
+    </div>
+
+    <div class="card">
+        <h3>Patents</h3>
+        <p>Two Indian patents.</p>
+    </div>
+</div>
+
+<p style="margin-top:25px;">
+    <b>Google Scholar:</b>
+    <a href="https://scholar.google.com/" target="_blank"
+       rel="noopener noreferrer">View Google Scholar</a>
+    <br>
+    <b>ORCID:</b>
+    <a href="https://orcid.org/" target="_blank"
+       rel="noopener noreferrer">View ORCID Profile</a>
+</p>
+
+<p style="margin-top:15px;">
+    <i>Individual publication titles, DOI links and citation
+    details can be added here.</i>
+</p>
+</section>
+
+<!-- ACADEMIC EXPERIENCE -->
+<section id="experience">
+<h2 class="section-title">Academic Experience</h2>
+
+<div class="timeline">
+    <div class="timeline-item">
+        <h3>Professor – Computer Science & Engineering</h3>
+        <p>Rajagiri School of Engineering & Technology, Kerala</p>
+        <p>2004 – Present</p>
+    </div>
+
+    <div class="timeline-item">
+        <h3>Head of Department – Computer Science & Engineering</h3>
+        <p>Academic leadership and departmental administration,
+        2023–2026.</p>
+        <p>Contributions to accreditation, curriculum development,
+        research, academic quality and institutional growth.</p>
+    </div>
+</div>
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section id="achievements">
+<h2 class="section-title">Achievements & Professional Activities</h2>
+
+<div class="info-grid">
+    <div class="card">
+        <h3>Accreditation</h3>
+        <p>Contributed to securing NBA Tier-I accreditation
+        for the CSE undergraduate programme.</p>
+    </div>
+
+    <div class="card">
+        <h3>Research Funding</h3>
+        <p>Involvement as Principal Investigator and
+        Co-Principal Investigator in funded research projects.</p>
+    </div>
+
+    <div class="card">
+        <h3>Research Guidance</h3>
+        <p>Research mentoring and doctoral guidance
+        under APJ Abdul Kalam Technological University.</p>
+    </div>
+
+    <div class="card">
+        <h3>Professional Memberships</h3>
+        <p>ISTE and CSI.</p>
+    </div>
+
+    <div class="card">
+        <h3>Academic Development</h3>
+        <p>Faculty development programmes, curriculum
+        development, workshops and research initiatives.</p>
+    </div>
+
+    <div class="card">
+        <h3>Innovation & Patents</h3>
+        <p>Two Indian patents and interdisciplinary
+        research and innovation activities.</p>
+    </div>
+</div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+<h2 class="section-title">Contact</h2>
+
+<p><b>Dr. Preetha K.G.</b></p>
+<p>Professor, Department of Computer Science & Engineering</p>
+<p>Rajagiri School of Engineering & Technology</p>
+<p>Kochi, Kerala, India</p>
+
+<p style="margin-top:15px;">
+    Email: <a href="mailto:YOUR_EMAIL@example.com">
+    YOUR_EMAIL@example.com</a>
+</p>
+
+<p>
+    Institutional Website:
+    <a href="https://www.rajagiritech.ac.in/"
+       target="_blank" rel="noopener noreferrer">
+       Rajagiri School of Engineering & Technology
+    </a>
+</p>
+
+<p>
+    LinkedIn:
+    <a href="https://www.linkedin.com/"
+       target="_blank" rel="noopener noreferrer">
+       LinkedIn Profile
+    </a>
+</p>
+</section>
+
+<footer>
+    <p>© 2026 Dr. Preetha K.G. | Academic & Research Website</p>
+    <p>Designed and hosted using GitHub Pages</p>
+</footer>
+
+</body>
+</html>
