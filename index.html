@@ -1,598 +1,514 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Dr. Preetha K.G. | Academic & Research Profile</title>
-
-<meta name="description" content="Academic and research profile of Dr. Preetha K.G., Professor of Computer Science and Engineering, Rajagiri School of Engineering and Technology.">
-
-<style>
-:root {
-    --primary: #12345a;
-    --secondary: #176b87;
-    --accent: #e9f3f8;
-    --text: #263445;
-    --light: #f6f9fc;
-    --white: #ffffff;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Segoe UI', Arial, sans-serif;
-    color: var(--text);
-    line-height: 1.7;
-    background: var(--light);
-}
-
-a {
-    text-decoration: none;
-    color: var(--secondary);
-}
-
-header {
-    background: var(--primary);
-    color: white;
-    padding: 15px 7%;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-}
-
-.logo {
-    font-size: 21px;
-    font-weight: bold;
-}
-
-nav ul {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-    flex-wrap: wrap;
-}
-
-nav ul a {
-    color: white;
-    font-size: 14px;
-}
-
-nav ul a:hover {
-    color: #8ed8ed;
-}
-
-.hero {
-    background: linear-gradient(120deg, #12345a, #176b87);
-    color: white;
-    padding: 85px 8%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px;
-    flex-wrap: wrap;
-}
-
-.hero-content {
-    max-width: 720px;
-}
-
-.hero h1 {
-    font-size: clamp(32px, 5vw, 48px);
-    margin-bottom: 12px;
-}
-
-.hero h2 {
-    font-size: 21px;
-    font-weight: 400;
-    margin-bottom: 18px;
-}
-
-.hero p {
-    font-size: 16px;
-    color: #e2edf5;
-}
-
-.profile-img {
-    width: 190px;
-    height: 190px;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid white;
-    background: #e9f3f8;
-}
-
-.btn {
-    display: inline-block;
-    margin-top: 25px;
-    padding: 11px 24px;
-    background: white;
-    color: var(--primary);
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-.btn:hover {
-    background: #d8eff8;
-}
-
-section {
-    padding: 65px 8%;
-    scroll-margin-top: 75px;
-}
-
-section:nth-child(even) {
-    background: white;
-}
-
-.section-title {
-    color: var(--primary);
-    font-size: 29px;
-    margin-bottom: 25px;
-    border-left: 5px solid var(--secondary);
-    padding-left: 14px;
-}
-
-.about-text {
-    max-width: 1000px;
-    font-size: 16px;
-}
-
-.info-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 20px;
-    margin-top: 28px;
-}
-
-.card {
-    background: white;
-    padding: 24px;
-    border-radius: 10px;
-    box-shadow: 0 3px 14px rgba(0,0,0,0.07);
-    border-top: 3px solid var(--secondary);
-}
-
-.card h3 {
-    color: var(--primary);
-    margin-bottom: 10px;
-    font-size: 19px;
-}
-
-.card p, .card li {
-    font-size: 14px;
-}
-
-.card ul {
-    padding-left: 19px;
-}
-
-.tag {
-    display: inline-block;
-    background: var(--accent);
-    color: var(--primary);
-    padding: 7px 13px;
-    border-radius: 20px;
-    margin: 5px 4px;
-    font-size: 14px;
-}
-
-.project {
-    margin-bottom: 20px;
-    padding: 23px;
-    background: white;
-    border-radius: 8px;
-    border-left: 4px solid var(--secondary);
-    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
-}
-
-.project h3 {
-    color: var(--primary);
-    margin-bottom: 8px;
-}
-
-.project p {
-    font-size: 15px;
-}
-
-.timeline {
-    border-left: 3px solid var(--secondary);
-    padding-left: 25px;
-    margin-left: 10px;
-}
-
-.timeline-item {
-    margin-bottom: 25px;
-}
-
-.timeline-item h3 {
-    color: var(--primary);
-}
-
-.contact {
-    background: var(--primary);
-    color: white;
-}
-
-.contact .section-title {
-    color: white;
-}
-
-.contact a {
-    color: #9ee5f5;
-}
-
-footer {
-    text-align: center;
-    padding: 22px;
-    background: #0c243f;
-    color: white;
-    font-size: 13px;
-}
-
-@media(max-width: 700px) {
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Academic profile of Dr. Preetha K.G., Professor and Head, Department of Computer Science and Engineering, Rajagiri School of Engineering & Technology.">
+  <title>Dr. Preetha K.G. | Academic Profile</title>
+  <style>
+    :root {
+      --primary: #123b63;
+      --secondary: #176b87;
+      --accent: #e7f2f7;
+      --text: #263445;
+      --muted: #607080;
+      --white: #ffffff;
+      --line: #dce5eb;
+      --shadow: 0 8px 24px rgba(20, 55, 85, .08);
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--text);
+      background: #f5f8fb;
+      line-height: 1.65;
+    }
+    a { color: var(--secondary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
     header {
-        padding: 14px 5%;
+      color: var(--white);
+      background: linear-gradient(130deg, #102f50, #176b87);
+      padding: 54px 20px 48px;
     }
-
-    nav {
-        gap: 12px;
-    }
-
-    nav ul {
-        gap: 12px;
-    }
-
     .hero {
-        padding: 55px 7%;
-        text-align: center;
-        justify-content: center;
+      max-width: 1120px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      gap: 34px;
     }
-
     .profile-img {
-        order: -1;
+      width: 178px;
+      height: 178px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid rgba(255,255,255,.9);
+      box-shadow: 0 6px 22px rgba(0,0,0,.2);
+      flex-shrink: 0;
     }
-
+    .hero h1 { margin: 0 0 8px; font-size: clamp(2rem, 4vw, 2.8rem); line-height: 1.2; }
+    .hero p { margin: 5px 0; }
+    .hero .role { font-size: 1.12rem; font-weight: 600; }
+    .hero .institution { color: #e0edf4; }
+    .hero-links { display: flex; flex-wrap: wrap; gap: 10px 18px; margin-top: 15px; }
+    .hero-links a { color: white; text-decoration: underline; text-underline-offset: 3px; }
+    nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: white;
+      box-shadow: 0 2px 10px rgba(0,0,0,.07);
+    }
+    nav .nav-inner {
+      max-width: 1120px;
+      margin: auto;
+      padding: 12px 18px;
+      display: flex;
+      gap: 18px;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    nav a { color: var(--primary); font-weight: 600; font-size: .92rem; }
+    main { max-width: 1120px; margin: 30px auto; padding: 0 20px; }
     section {
-        padding: 45px 6%;
+      background: var(--white);
+      margin: 0 0 24px;
+      padding: 30px;
+      border-radius: 13px;
+      box-shadow: var(--shadow);
+      scroll-margin-top: 78px;
     }
-}
-</style>
+    h2 {
+      color: var(--primary);
+      margin: 0 0 20px;
+      font-size: 1.55rem;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 10px;
+    }
+    h3 { color: var(--secondary); margin: 22px 0 9px; font-size: 1.12rem; }
+    p { margin-top: 7px; }
+    ul, ol { padding-left: 23px; }
+    li { margin: 6px 0; }
+    .grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 17px; }
+    .card {
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      padding: 18px;
+      background: #fff;
+    }
+    .card h3 { margin-top: 0; }
+    .meta { color: var(--muted); font-size: .94rem; }
+    .tag-list { display: flex; flex-wrap: wrap; gap: 9px; }
+    .tag {
+      display: inline-block;
+      background: var(--accent);
+      color: var(--primary);
+      padding: 6px 11px;
+      border-radius: 20px;
+      font-size: .91rem;
+    }
+    .publication-list li { margin-bottom: 12px; }
+    .subsection { margin-top: 25px; }
+    .subsection:first-of-type { margin-top: 0; }
+    .contact-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
+    footer {
+      text-align: center;
+      color: #e6eef4;
+      background: #102f50;
+      padding: 22px;
+      font-size: .92rem;
+    }
+    @media (max-width: 700px) {
+      .hero { flex-direction: column; text-align: center; }
+      .hero-links { justify-content: center; }
+      .grid, .contact-grid { grid-template-columns: 1fr; }
+      section { padding: 22px 18px; }
+      nav .nav-inner { gap: 14px; }
+    }
+  </style>
 </head>
-
 <body>
 
-<!-- NAVIGATION -->
-<header>
-<nav>
-    <div class="logo">Dr. Preetha K.G.</div>
-    <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#research">Research</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#publications">Publications</a></li>
-        <li><a href="#achievements">Achievements</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
-</header>
-
-<!-- HERO SECTION -->
-<div class="hero">
-    <div class="hero-content">
+  <!-- HERO / PROFILE HEADER: keep profile.jpg in the same folder as this file.
+       If your uploaded image is named differently, change the filename below. -->
+  <header id="home">
+    <div class="hero">
+      <img src="profile.jpg" alt="Dr. Preetha K.G." class="profile-img">
+      <div>
         <h1>Dr. Preetha K.G.</h1>
-        <h2>Professor | Computer Science & Engineering</h2>
+        <p class="role">Professor &amp; Head, Department of Computer Science &amp; Engineering</p>
+        <p class="institution">Rajagiri School of Engineering &amp; Technology (Autonomous), Kochi, Kerala, India</p>
+        <div class="hero-links">
+          <a href="mailto:preetha_kg@rajagiritech.edu.in">Institutional Email</a>
+          <a href="mailto:preethamanish@gmail.com">Personal Email</a>
+          <a href="https://scholar.google.com/citations?user=Xvo3QVIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a>
+          <a href="https://www.researchgate.net/profile/Preetha-K-G" target="_blank" rel="noopener">ResearchGate</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-inner">
+      <a href="#about">About</a>
+      <a href="#research">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#publications">Publications</a>
+      <a href="#patents">Patents &amp; Book</a>
+      <a href="#experience">Experience</a>
+      <a href="#roles">Academic Roles</a>
+      <a href="#achievements">Achievements</a>
+      <a href="#talks">Talks &amp; FDPs</a>
+      <a href="#service">Professional Service</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <!-- ABOUT -->
+    <section id="about">
+      <h2>About</h2>
+      <p>
+        Dr. Preetha K.G. is a Professor in the Department of Computer Science &amp; Engineering
+        at Rajagiri School of Engineering &amp; Technology (Autonomous), Kochi, Kerala.
+        She joined Rajagiri in December 2004 and has served in academic and administrative
+        roles in the department, including Head of the Department.
+      </p>
+      <h3>Education</h3>
+      <div class="grid">
+        <div class="card">
+          <h3>Ph.D. – Computer Science &amp; Engineering</h3>
+          <p>Cochin University of Science and Technology (CUSAT), Kerala, India, 2018.</p>
+          <p><strong>Thesis:</strong> “Design, Development and Evaluation of Efficient Routing Algorithms for Mobile Ad hoc Networks”.</p>
+          <p><strong>Supervisor:</strong> Dr. A. Unnikrishnan, Scientist (Retd.), NPOL, DRDO, Kochi.</p>
+        </div>
+        <div class="card">
+          <h3>M.Tech. – Computer Science &amp; Engineering</h3>
+          <p>Dr. M.G.R. University, Tamil Nadu, India, 2007.</p>
+          <h3>B.Tech. – Computer Science &amp; Engineering</h3>
+          <p>University of Calicut, Kerala, India, 1999.</p>
+        </div>
+      </div>
+      <h3>Research Profiles</h3>
+      <ul>
+        <li><strong>Google Scholar:</strong> <a href="https://scholar.google.com/citations?user=Xvo3QVIAAAAJ&amp;hl=en" target="_blank" rel="noopener">View profile</a></li>
+        <li><strong>ResearchGate:</strong> <a href="https://www.researchgate.net/profile/Preetha-K-G" target="_blank" rel="noopener">View profile</a></li>
+        <li><strong>ORCID:</strong> <a href="https://orcid.org/0000-0002-1260-9951" target="_blank" rel="noopener">0000-0002-1260-9951</a></li>
+        <li><strong>Scopus Author ID:</strong> 55317535100</li>
+        <li><strong>Web of Science Researcher ID:</strong> AAF-6872-2022</li>
+        <li><strong>VIDWAN ID:</strong> 286154</li>
+      </ul>
+    </section>
+
+    <!-- RESEARCH INTERESTS -->
+    <section id="research">
+      <h2>Research Interests</h2>
+      <p>The following areas are reflected in the research projects, thesis, and publications listed in the curriculum vitae.</p>
+      <div class="tag-list">
+        <span class="tag">Ocean Data Visualization</span>
+        <span class="tag">Oceanography</span>
+        <span class="tag">Deep Learning</span>
+        <span class="tag">Machine Learning</span>
+        <span class="tag">Flood Susceptibility Mapping</span>
+        <span class="tag">Mobile Ad hoc Networks</span>
+        <span class="tag">Wireless Sensor Networks</span>
+        <span class="tag">Network Routing</span>
+        <span class="tag">Cloud Security</span>
+        <span class="tag">Intelligent Video Surveillance</span>
+        <span class="tag">Image Processing</span>
+        <span class="tag">Internet of Things</span>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2>Funded Research Projects</h2>
+      <div class="card">
+        <h3>1. OCEANVIZIO – An Interactive Dynamic and Ocean Visualization Tool</h3>
+        <p><strong>Role:</strong> Principal Investigator</p>
+        <p><strong>Grant amount:</strong> ₹34 Lakhs</p>
+        <p><strong>Period:</strong> June 2021 – June 2024 (3 years)</p>
+        <p><strong>Funding agency:</strong> Naval Research Board, Ministry of Defence, Government of India</p>
+        <p><strong>Lab collaborator:</strong> Naval Physical Oceanographic Laboratory (NPOL), DRDO, Kochi</p>
+        <p><strong>Status:</strong> Completed</p>
         <p>
-            Rajagiri School of Engineering & Technology (RSET),
-            Kochi, Kerala, India.
+          The OCEANVIZIO tool was developed for DRDO and the Indian Navy. It is an interactive,
+          dynamic, multivariate, and scalable ocean visualization platform that presents ocean
+          data through 2D and 3D views. The tool is designed to explore spatial and temporal
+          variability across the World Ocean and supports scalar and vector visualization of
+          heterogeneous ocean data.
         </p>
-        <p style="margin-top:15px;">
-            Researcher in Artificial Intelligence, Machine Learning,
-            Ocean Informatics, Cybersecurity and Intelligent Systems.
+      </div>
+      <div class="card" style="margin-top:17px">
+        <h3>2. An Intelligent Dashboard for Dynamic Flood Susceptibility Mapping for Indian States Using Deep Learning Techniques</h3>
+        <p><strong>Role:</strong> Co-Principal Investigator</p>
+        <p><strong>Grant amount:</strong> ₹23 Lakhs (recommended for sanction, as stated in the CV)</p>
+        <p><strong>Period:</strong> June 2024 – June 2027</p>
+        <p><strong>Funding agency:</strong> Council of Scientific and Industrial Research (CSIR), Ministry of Science and Technology, Government of India</p>
+        <p><strong>Status:</strong> Recommended for financial support</p>
+        <p>
+          The proposed project aims to provide an automated intelligent dashboard application
+          for Kerala Disaster Management Authorities. Deep learning techniques are used to
+          analyse multiple data sources and identify flood susceptibility. The project highlights
+          the need for improved flood vulnerability mapping in the context of floods in 2018,
+          2019, and 2021, alongside factors such as deforestation, land-use changes, urbanisation,
+          and excessive rainfall associated with climate change. The initiative aims to support
+          sustainable flood-risk management through prevention, protection, preparedness, and
+          accurate flood-vulnerability maps.
         </p>
-        <a href="#about" class="btn">Explore My Profile</a>
-    </div>
+      </div>
+    </section>
 
-    <!-- Replace profile.jpg with your photograph -->
-    <img src="Photo.jpeg"
-         alt="Dr. Preetha K.G."
-         class="profile-img">
-</div>
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <h2>Publications</h2>
+      <p class="meta">Publication titles and bibliographic details are reproduced from the supplied resume. Please update publication status where a manuscript has subsequently been accepted or published.</p>
 
-<!-- ABOUT -->
-<section id="about">
-<h2 class="section-title">About Me</h2>
+      <div class="subsection">
+        <h3>Journals – Under Review (as listed in the resume)</h3>
+        <ol class="publication-list">
+          <li>“OCEANVIZIO: A Dynamic and Scalable Visualization Tool for Comprehensive Analysis of Ocean Parameters”, Under Review in <em>Defence Science Journal</em>, 2024.</li>
+          <li>“A study on mesoscale eddies in the Bay of Bengal: Detection, tracking and assessment”, Under Review in <em>Ocean Science Journal</em> (Springer), 2023.</li>
+          <li>“Development of an Interactive 3D Visualization Framework for Ocean Data using Open-Source Software”, Under Review in <em>Computer Animation and Virtual Worlds</em> (Wiley), 2024.</li>
+          <li>“A Python Interface for Interactive Visualization and Analysis of Multivariate Ocean Data”, Under Review in <em>Journal of Visualization</em> (Springer), 2023.</li>
+          <li>“An Energy Efficiency Optimization for Uplink Communication in IEEE 802.11ah under Restricted Access Window”, Under Review in <em>Wireless and Personal Communication</em> (Springer), 2023.</li>
+          <li>“Design of a Novel Framework for Curry Leaves Disease Detection using an Ensemble of CNNs and Stacked Sparse Autoencoder”, Under Review in <em>Journal of Plant Diseases and Protection</em> (Springer), 2024.</li>
+        </ol>
+      </div>
 
-<div class="about-text">
-<p>
-I am Dr. Preetha K.G., Professor in the Department of Computer
-Science and Engineering at Rajagiri School of Engineering &
-Technology, Kerala, India. I have been associated with RSET since
-2004 and have over two decades of experience in teaching,
-research, academic administration and institutional development.
-</p>
+      <div class="subsection">
+        <h3>Journals – Published</h3>
+        <ol class="publication-list" start="7">
+          <li>“An Intelligent Pattern Matching approach with Deep Hypersphere Model for Secure Big Data Storage in Cloud Environment.” <em>International Journal of Computer Information Systems and Industrial Management Applications</em>, Volume 15, pp. 166–175, 2023. Scopus.</li>
+          <li>“Design and implementation of an augmented reality mobile application for navigating ATM counters (AR-ATM).” <em>Industrial Robot: International Journal of Robotics Research and Application</em>, Emerald, 2022. SCIE.</li>
+          <li>“SPOTLIGHT: A Mobile Application for Artist Management.” <em>Mathematical Statistician and Engineering Applications</em>, 72(1), 1054–1061, 2023. Scopus.</li>
+          <li>“Price Forecasting on a Large Scale Data Set using Time Series and Neural Network Models.” <em>KSII Transactions on Internet &amp; Information Systems</em>, 16(12), 2022. SCIE.</li>
+          <li>“An Energy Efficient Intelligent Method for Sensor Node Selection to Improve the Data Reliability in Internet of Things Networks.” <em>KSII Transactions on Internet &amp; Information Systems</em>, 15(9), 2021. SCIE.</li>
+          <li>“A fuzzy rule-based abandoned object detection using image fusion for intelligent video surveillance systems.” <em>Turkish Journal of Computer and Mathematics Education (TURCOMAT)</em>, 12(3), 3694–3702, 2021. Scopus.</li>
+          <li>“Reduction of overhead in routing protocols for MANET using fuzzy set-based decision making.” <em>International Journal of Networking and Virtual Organisations</em>, 21(1), 89–100, 2019. Scopus.</li>
+          <li>“Enhanced domination set based routing in mobile ad hoc networks with reliable nodes.” <em>Computers &amp; Electrical Engineering</em>, 64, 595–604, 2017. Scopus.</li>
+          <li>Preetha, K. G., A. Unnikrishnan, and K. Poulose Jacob. “An effective path protection method to attain the route stability in MANET.” <em>International Journal of Advanced Research in Computer and Communication Engineering</em>, 2(6), 2343–2348, 2013.</li>
+          <li>“Enhanced data replication based on demand to improve data availability in MANETs.” <em>International Journal of Recent Development in Engineering and Technology</em>, 2(2), 71–74, 2014.</li>
+          <li>“A novel approach to find the alternative path for route maintenance in AODV.” <em>International Journal of Computer Science &amp; Engineering Technology</em>, 2013.</li>
+          <li>“A novel solution to the short range bluetooth communication.” <em>International Journal On Adhoc Networking Systems (IJANS)</em>, 1(2), 2011.</li>
+          <li>“Shortest Path Geographic Routing for Mobile Ad Hoc Networks.” <em>International Journal of Computer Science and Engineering Technology (IJCSET)</em>, 4(08), 1177–1180, 2013.</li>
+          <li>“ASRMalNets: Acknowledgement Based Secure Routing Scheme for Malicious MANETs.” <em>IOSR Journal of Computer Engineering</em>, 2014.</li>
+        </ol>
+      </div>
 
-<p style="margin-top:15px;">
-I received my Ph.D. in Mobile Ad hoc Networks from Cochin
-University of Science and Technology (CUSAT) in 2018.
-My research interests span Artificial Intelligence, Machine
-Learning, Deep Learning, Computer Networks, Cybersecurity
-and intelligent ocean data analytics.
-</p>
+      <div class="subsection">
+        <h3>Conference Papers / Book Chapters</h3>
+        <ol class="publication-list" start="21">
+          <li>“A fuzzy rule-based abandoned object detection using image fusion for intelligent video surveillance systems.” <em>Turkish Journal of Computer and Mathematics Education (TURCOMAT)</em>, 12(3), 3694–3702, 2021.</li>
+          <li>“Enhancing Traffic Control Strategies through Dynamic Simulation and Reinforcement Learning”, 3rd International Conference on Applied Artificial Intelligence and Computing (ICAAIC 2024), IEEE (listed as “To be Published” in the resume).</li>
+          <li>“Dynamic Landslide Prediction, Monitoring, and Early Warning with Explainable AI: A Comprehensive Approach”, 3rd International Conference on Applied Artificial Intelligence and Computing (ICAAIC 2024), IEEE (listed as “To be Published” in the resume).</li>
+          <li>“A Python Framework for Interactive 3D Visualization of Ocean Data”, International Conference on Soft Computing and Signal Processing, Springer, Scopus, 2023.</li>
+          <li>“A Python-based Tool for the Generation of T-S Plot to Determine Water Masses in the World Ocean”, Global Conference on Information Technologies and Communications (GCITC), IEEE, 2023.</li>
+          <li>“Interactive Chatbot with AI support for Universities: Enhancing Student Engagement and Administrative Efficiency”, 23rd Intelligent System Design and Applications, Springer, 2023 (listed as “To be published” in the resume).</li>
+          <li>“DeepPRS: A Deep Learning Integrated Pattern Recognition Methodology for Secure Data in Cloud Environment.” In <em>Innovations in Bio-Inspired Computing and Applications</em>: Proceedings of the 13th International Conference on Innovations in Bio-Inspired Computing and Applications, 2023.</li>
+          <li>“Efficient abandoned luggage detection in complex surveillance videos.” <em>Lecture Notes on Data Engineering and Communications Technologies</em>, Volume 46, 181–187, 2020.</li>
+          <li>“Enhancing the performance of routing protocol in MANET by predicting the link availability through belief propagation.” TENSYMP 2017 – IEEE International Symposium on Technologies for Smart Cities, 2017.</li>
+          <li>“SDFS: Secured Data Forwarding with Minimum Selfishness and Message Overhead in Mobile Wireless Network.” Proceedings of the 5th International Conference on Advances in Computing and Communications (ICACC 2015), 122–125, 2016.</li>
+          <li>“A cluster-based leader election algorithm for MANETs.” 2013 International Conference on Control Communication and Computing (ICCC 2013), 496–499, 2013.</li>
+          <li>“Demand based data replication in MANETs.” Proceedings of the 3rd International Conference on Advances in Computing and Communications (ICACC 2013), 441–444, 2013.</li>
+          <li>“Enhanced beaconless routing mechanism in VANET.” Proceedings of the 2013 International Conference on Advances in Computing, Communications and Informatics (ICACCI 2013), 1076–1081.</li>
+          <li>“A QoS based network selection scheme for 4G systems with preplanner for emergency services.” 2013 4th International Conference on Computing, Communications and Networking Technologies (ICCCNT 2013).</li>
+          <li>“Enhanced Performance of Engineering Students through REA: A Comparative Analysis.” 2012 International Conference on Advances in Computing and Communications, 178–181.</li>
+          <li>“A QoS and QoE collaborative scheme for effective network selection in 4G communication systems.” Proceedings of the 2012 International Conference on Recent Advances in Computing and Software Systems (RACSS 2012), 170–173.</li>
+          <li>“A novel approach for green computing through event-driven power aware pervasive computing.” <em>Lecture Notes of the Institute for Computer Sciences, Social-Informatics and Telecommunications Engineering (LNICST)</em>, Volume 85, 81–88, 2012.</li>
+          <li>“Performance improvement of multiple Connections in AODV with the concern of Node bandwidth.” arXiv preprint, 2012.</li>
+          <li>“probabilistic approach to reduce the route establishment overhead in AODV algorithm for MANET.” arXiv preprint, 2012.</li>
+          <li>“A novel algorithm for traffic reduction in wireless sensor networks.” 2014 1st International Conference on Computational Systems and Communications (ICCSC 2014), pages 209–213 (bibliographic year/page details reproduced as supplied in the resume).</li>
+        </ol>
+      </div>
+    </section>
 
-<p style="margin-top:15px;">
-My research focuses on developing practical AI-driven solutions
-for real-world challenges, particularly in ocean science,
-environmental monitoring, flood susceptibility assessment and
-cybersecurity. I am also involved in funded research projects,
-interdisciplinary collaborations and research mentoring.
-</p>
-</div>
+    <!-- PATENTS AND BOOK -->
+    <section id="patents">
+      <h2>Patents &amp; Book</h2>
+      <h3>Patents</h3>
+      <ol>
+        <li><strong>Portable public surveillance device with an AI driven face recognition computational module for large scale Community Policing.</strong><br>
+          Application Number: 202041041838 | Status: Published | Date: 09/10/2020
+        </li>
+        <li><strong>A real time Automatic Intelligent System and Method for Wild Animal Monitoring and Counting Device Based on Deep Convolutional Neural Network.</strong><br>
+          Application Number: 2021241013392 | Status: Published | Date: 18/03/2022
+        </li>
+      </ol>
+      <h3>Book Published</h3>
+      <p>“Security Management in Cloud Environment for Social Enterprises”, COSMOS Scientific Publications, March 2023.</p>
+      <h3>Awards</h3>
+      <ol>
+        <li><strong>Research Excellence Award – 2018</strong> for the research titled “Enhanced Domination set based routing in Mobile Ad hoc Networks with Reliable Node”, from Institute for Exploring Advances in Engineering.</li>
+        <li><strong>Best Paper Award</strong> for “Protocol based classification in hybrid network intrusion detection systems”, National Conference on Technological Advancements in Engineering, SNG Payyannur, 27–28 March 2015.</li>
+      </ol>
+    </section>
 
-<div class="info-grid">
-    <div class="card">
-        <h3>Academic Position</h3>
-        <p>Professor, Computer Science & Engineering</p>
-    </div>
-    <div class="card">
-        <h3>Institution</h3>
-        <p>Rajagiri School of Engineering & Technology</p>
-    </div>
-    <div class="card">
-        <h3>Doctoral Degree</h3>
-        <p>Ph.D. in Mobile Ad hoc Networks, CUSAT, 2018</p>
-    </div>
-    <div class="card">
-        <h3>Research Contributions</h3>
-        <p>35+ research publications and 2 Indian patents</p>
-    </div>
-</div>
-</section>
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2>Academic &amp; Professional Experience</h2>
+      <div class="card">
+        <h3>Rajagiri School of Engineering &amp; Technology, Kerala, India</h3>
+        <p><strong>December 2004 – Present</strong></p>
+        <p>Professor / Associate Professor / Assistant Professor / Lecturer (career designations as listed in the resume); Professor &amp; Head, Department of Computer Science &amp; Engineering.</p>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <h3>National Institute of Technology (NIT), Calicut</h3>
+        <p><strong>June 2002 – September 2004</strong></p>
+        <p>Ad hoc Lecturer.</p>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <h3>Dayapuram Institute of Management, Arts and Technology, Calicut</h3>
+        <p><strong>August 2001 – May 2002</strong></p>
+        <p>Lecturer.</p>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <h3>Government Women’s Polytechnic, Kalamassery</h3>
+        <p><strong>July 2000 – March 2001</strong></p>
+        <p>Guest Lecturer.</p>
+      </div>
+    </section>
 
-<!-- RESEARCH INTERESTS -->
-<section id="research">
-<h2 class="section-title">Research Interests</h2>
+    <!-- ACADEMIC ROLES -->
+    <section id="roles">
+      <h2>Academic &amp; Administrative Roles at RSET</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Major Academic Roles</h3>
+          <ul>
+            <li>Chairperson, Board of Studies – Department of CSE.</li>
+            <li>B.Tech. CSE Curriculum &amp; Syllabus Coordinator – Department of CSE.</li>
+            <li>Ph.D. Supervisor – APJ Abdul Kalam Kerala Technological University.</li>
+            <li>CSI Student Branch Coordinator.</li>
+            <li>B.Tech. Minor Programme Coordinator.</li>
+            <li>M.Tech. Network Engineering Ernakulam Zone Chairperson.</li>
+            <li>M.Tech. Dissertation Supervisor.</li>
+            <li>B.Tech. Project Guide.</li>
+            <li>Question Paper Setter for B.Tech. and M.Tech.</li>
+            <li>Question Paper Scrutinizer.</li>
+          </ul>
+        </div>
+        <div class="card">
+          <h3>Administrative Responsibilities</h3>
+          <ul>
+            <li>Head of the Department – Department of CSE.</li>
+            <li>Academic Council Member.</li>
+            <li>Central Curriculum Committee Member.</li>
+            <li>Staff Recruitment Interview Panel Member.</li>
+            <li>International Conference Coordinator and Technical Programme Committee Member.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
 
-<p>
-My research interests focus on the application of intelligent
-computing techniques to complex real-world problems.
-</p>
+    <!-- ACHIEVEMENTS -->
+    <section id="achievements">
+      <h2>Major Achievements &amp; Departmental Initiatives as HoD</h2>
+      <p class="meta">Initiatives listed in the supplied resume under “Major Achievements/Events in CSE as Head of the Department”.</p>
+      <ul>
+        <li>Started technical clubs for students.</li>
+        <li>Launched a GitHub repository (CSE) for projects.</li>
+        <li>Introduced a certificate course on IoT.</li>
+        <li>Created a chatbot for the college website.</li>
+        <li>Organised project exhibitions.</li>
+        <li>Initiated the CSE Alumni website.</li>
+        <li>Coordinated a workshop on work–life balance for faculty.</li>
+        <li>Coordinated the faculty workshop “Unveiling the Unseen” to identify behavioural problems of students.</li>
+        <li>Initiated research round-table sessions for peer-group research discussions.</li>
+      </ul>
+    </section>
 
-<div style="margin-top:20px;">
-    <span class="tag">Artificial Intelligence</span>
-    <span class="tag">Machine Learning</span>
-    <span class="tag">Deep Learning</span>
-    <span class="tag">Explainable AI</span>
-    <span class="tag">Ocean Informatics</span>
-    <span class="tag">Cybersecurity</span>
-    <span class="tag">Computer Networks</span>
-    <span class="tag">Environmental AI</span>
-    <span class="tag">IoT and Intelligent Systems</span>
-    <span class="tag">Geospatial Analytics</span>
-</div>
+    <!-- TALKS AND FDP -->
+    <section id="talks">
+      <h2>Invited Talks &amp; Workshops Delivered</h2>
+      <ol>
+        <li>“Workshop on Visualization Techniques”, Government Engineering College, Thrissur, December 2022.</li>
+        <li>“Machine Learning Concepts and Applications”, St. Teresa’s College, Ernakulam, November 2022.</li>
+        <li>“Research Issues in Wireless Sensor Networks and NS2”, FDP at College of Engineering, Cherthala, October 2016.</li>
+        <li>“Wireless Networks Simulation using NS2”, Toc H Institute of Science &amp; Technology, November 2014.</li>
+        <li>“Cyber Awareness” for Plus Two students, Government GHSS, Irumpanam, as part of the Stop, Think, Connect Promotional Campaign, January 2013.</li>
+        <li>“Energy Management and Conservation” for Plus Two students at Christu Jayanthi Public School, as part of the Save Energy &amp; Go-Green Campaign, October 2013.</li>
+        <li>“Reliability based Two hop Routing for Wireless Sensor Networks”, RSET peer group, February 2013.</li>
+        <li>“High Impact Teaching Methodologies”, RSET peer group, May 2012.</li>
+        <li>“Intermediate Code Generation Phase of a Compiler Construction”, FDP, RSET, June 2010.</li>
+      </ol>
 
-<div class="info-grid">
-    <div class="card">
-        <h3>AI & Machine Learning</h3>
-        <p>Intelligent prediction, classification, anomaly detection,
-        explainable AI and data-driven decision support.</p>
-    </div>
+      <h3>Short-Term Courses / Faculty Development Programmes Attended</h3>
+      <ol>
+        <li>“Cyber Security and Block Chain Technologies”, RSET, 2023.</li>
+        <li>“International Conference on Mathematics of Intelligent Computing and Data Science”, RSET, 2022.</li>
+        <li>“Natural Language Processing and IR – Research Trends and Applications”, organised by ICFOSS, 2022.</li>
+        <li>“Ethics in Engineering Practice”, NPTEL MOOC, 8 weeks, 2021.</li>
+        <li>“Big Data Computing”, NPTEL MOOC, 8 weeks, 2021.</li>
+        <li>“Recent Developments in Sensor Technologies”, ATAL FDP, 2021.</li>
+        <li>“Data Science and Artificial Intelligence”, organised by Kerala Technological University, 2021.</li>
+        <li>“Data Science for the Next Decade”, organised by Kerala Technological University, 2021.</li>
+        <li>“Data Mining”, NPTEL MOOC, 8 weeks, 2020.</li>
+        <li>“Skill Enhancement using Free and OpenSource Tools”, organised by NITTTR, 2020.</li>
+        <li>“The Data Scientist’s Toolbox”, Coursera, 2020.</li>
+        <li>“Machine Learning and Deep Learning”, organised by AICTE, 2020.</li>
+        <li>“Data Analytics and Machine Learning”, organised by AICTE, 2020.</li>
+        <li>“Machine Learning and Deep Learning”, organised by TCS, 2020.</li>
+        <li>“Inculcating Universal Human Values in Technical Education”, organised by AICTE, 2020.</li>
+        <li>“Skill Enrichment using Free and Open Software Tools”, NIT Chandigarh, 2020.</li>
+        <li>“FDP on LaTeX”, IIT Bombay, 2020.</li>
+        <li>“Outcome Based Education in Higher Education Sector”, Amal Jyothi College of Engineering, 2020.</li>
+      </ol>
+    </section>
 
-    <div class="card">
-        <h3>Ocean Informatics</h3>
-        <p>AI-based ocean eddy detection, tracking, analysis and
-        marine data visualization.</p>
-    </div>
+    <!-- PROFESSIONAL SERVICE / OUTREACH -->
+    <section id="service">
+      <h2>Professional Associations &amp; Service</h2>
+      <ul>
+        <li>Life Member, Indian Society for Technical Education (ISTE).</li>
+        <li>Member, Computer Society of India (CSI).</li>
+        <li>Member, CSI Cochin Chapter.</li>
+        <li>Member, Board of Studies, Rajagiri College of Social Sciences.</li>
+        <li>Reviewer for various international journals and conferences.</li>
+        <li>Technical Programme Committee member and Chair for various international conferences.</li>
+        <li>Question Paper Setter, CUSAT and KUFOS.</li>
+      </ul>
+      <h3>Community Outreach &amp; Social Initiatives</h3>
+      <ol>
+        <li>Conducted a digital literacy workshop for people in Thrikkakara Municipality, 2024.</li>
+        <li>Initiated Onam kit distribution for underprivileged people, 2023.</li>
+        <li>Workshop on Chekkutty making as part of flood-relief activities, 2018.</li>
+        <li>Initiated the Stop, Think, Connect promotional cyber-awareness campaign for school students.</li>
+        <li>Conducted a workshop on computer fundamentals for women in Thrikkakara Municipality.</li>
+      </ol>
+    </section>
 
-    <div class="card">
-        <h3>Cybersecurity</h3>
-        <p>Behavioural anomaly detection, network security,
-        firewall analytics and intelligent threat assessment.</p>
-    </div>
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <div class="card">
+          <h3>Email</h3>
+          <p><a href="mailto:preetha_kg@rajagiritech.edu.in">preetha_kg@rajagiritech.edu.in</a></p>
+          <p><a href="mailto:preethamanish@gmail.com">preethamanish@gmail.com</a></p>
+        </div>
+        <div class="card">
+          <h3>Phone</h3>
+          <p><a href="tel:+919387516291">+91 93875 16291</a></p>
+        </div>
+        <div class="card">
+          <h3>Institution</h3>
+          <p>Rajagiri School of Engineering &amp; Technology (Autonomous)<br>Kochi, Kerala, India</p>
+        </div>
+        <div class="card">
+          <h3>Research Profiles</h3>
+          <p><a href="https://scholar.google.com/citations?user=Xvo3QVIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a></p>
+          <p><a href="https://www.researchgate.net/profile/Preetha-K-G" target="_blank" rel="noopener">ResearchGate</a></p>
+          <p><a href="https://orcid.org/0000-0002-1260-9951" target="_blank" rel="noopener">ORCID</a></p>
+        </div>
+      </div>
+    </section>
+  </main>
 
-    <div class="card">
-        <h3>Environmental AI</h3>
-        <p>Deep learning and machine learning for flood
-        susceptibility mapping and environmental intelligence.</p>
-    </div>
-</div>
-</section>
-
-<!-- RESEARCH PROJECTS -->
-<section id="projects">
-<h2 class="section-title">Research Projects</h2>
-
-<div class="project">
-    <h3>OceanVizio – Intelligent Ocean Data Analytics</h3>
-    <p>
-    Principal Investigator. An AI-enabled ocean data visualization
-    and analytics platform for the detection, analysis and
-    visualization of ocean eddies using two-dimensional and
-    three-dimensional representations. The project has received
-    support from NRB, DRDO and the Indian Navy, with deployments
-    at NPOL and Navy establishments.
-    </p>
-</div>
-
-<div class="project">
-    <h3>Dynamic Flood Susceptibility Mapping for Indian States
-    using Deep Learning Techniques</h3>
-    <p>
-    A CSIR-ASPIRE funded research project focused on developing
-    intelligent flood susceptibility mapping approaches using
-    machine learning, deep learning, rainfall, terrain,
-    hydrological and environmental parameters.
-    </p>
-</div>
-
-
-<div class="project">
-    <h3>Explainable AI for Enterprise Firewall Log Analytics</h3>
-    <p>
-    Development of an explainable AI-driven behavioural anomaly
-    detection framework for enterprise firewall logs, incorporating
-    device-level profiling, anomaly scoring and SHAP-based
-    explanations.
-    </p>
-</div>
-</section>
-
-<!-- PUBLICATIONS -->
-<section id="publications">
-<h2 class="section-title">Publications</h2>
-
-<p>
-My research publications cover computer networks, artificial
-intelligence, machine learning, ocean analytics and intelligent
-computing systems.
-</p>
-
-<div class="info-grid">
-    <div class="card">
-        <h3>Journal Publications</h3>
-        <p>Peer-reviewed research contributions in relevant
-        areas of computer science and interdisciplinary research.</p>
-    </div>
-
-    <div class="card">
-        <h3>Conference Publications</h3>
-        <p>Research contributions presented at national and
-        international conferences.</p>
-    </div>
-
-    <div class="card">
-        <h3>Patents</h3>
-        <p>Two Indian patents.</p>
-    </div>
-</div>
-
-<p style="margin-top:25px;">
-    <b>Google Scholar:</b>
-    <a href="https://scholar.google.com/" target="_blank"
-       rel="noopener noreferrer">View Google Scholar</a>
-    <br>
-    <b>ORCID:</b>
-    <a href="https://orcid.org/" target="_blank"
-       rel="noopener noreferrer">View ORCID Profile</a>
-</p>
-
-<p style="margin-top:15px;">
-    <i>Individual publication titles, DOI links and citation
-    details can be added here.</i>
-</p>
-</section>
-
-<!-- ACADEMIC EXPERIENCE -->
-<section id="experience">
-<h2 class="section-title">Academic Experience</h2>
-
-<div class="timeline">
-    <div class="timeline-item">
-        <h3>Professor – Computer Science & Engineering</h3>
-        <p>Rajagiri School of Engineering & Technology, Kerala</p>
-        <p>2004 – Present</p>
-    </div>
-
-    <div class="timeline-item">
-        <h3>Head of Department – Computer Science & Engineering</h3>
-        <p>Academic leadership and departmental administration,
-        2023–2026.</p>
-        <p>Contributions to accreditation, curriculum development,
-        research, academic quality and institutional growth.</p>
-    </div>
-</div>
-</section>
-
-<!-- ACHIEVEMENTS -->
-<section id="achievements">
-<h2 class="section-title">Achievements & Professional Activities</h2>
-
-<div class="info-grid">
-    <div class="card">
-        <h3>Accreditation</h3>
-        <p>Contributed to securing NBA Tier-I accreditation
-        for the CSE undergraduate programme.</p>
-    </div>
-
-    <div class="card">
-        <h3>Research Funding</h3>
-        <p>Involvement as Principal Investigator and
-        Co-Principal Investigator in funded research projects.</p>
-    </div>
-
-    <div class="card">
-        <h3>Research Guidance</h3>
-        <p>Research mentoring and doctoral guidance
-        under APJ Abdul Kalam Technological University.</p>
-    </div>
-
-    <div class="card">
-        <h3>Professional Memberships</h3>
-        <p>ISTE and CSI.</p>
-    </div>
-
-    <div class="card">
-        <h3>Academic Development</h3>
-        <p>Faculty development programmes, curriculum
-        development, workshops and research initiatives.</p>
-    </div>
-
-    <div class="card">
-        <h3>Innovation & Patents</h3>
-        <p>Two Indian patents and interdisciplinary
-        research and innovation activities.</p>
-    </div>
-</div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-<h2 class="section-title">Contact</h2>
-
-<p><b>Dr. Preetha K.G.</b></p>
-<p>Professor, Department of Computer Science & Engineering</p>
-<p>Rajagiri School of Engineering & Technology</p>
-<p>Kochi, Kerala, India</p>
-
-<p style="margin-top:15px;">
-    Email: <a href="mailto:YOUR_EMAIL@example.com">
-    preetha_kg@rajagiritech.edu.in</a>
-</p>
-
-<p>
-    Institutional Website:
-    <a href="https://www.rajagiritech.ac.in/"
-       target="_blank" rel="noopener noreferrer">
-       Rajagiri School of Engineering & Technology
-    </a>
-</p>
-
-<p>
-    LinkedIn:
-    <a href="https://www.linkedin.com/"
-       target="_blank" rel="noopener noreferrer">
-       LinkedIn Profile
-    </a>
-</p>
-</section>
-
-<footer>
-    <p>© 2026 Dr. Preetha K.G. | Academic & Research Website</p>
-    <p>Designed and hosted using GitHub Pages</p>
-</footer>
-
+  <footer>
+    <p>© <span id="year">2026</span> Dr. Preetha K.G. | Academic Profile</p>
+  </footer>
 </body>
 </html>
